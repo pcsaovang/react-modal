@@ -59,7 +59,7 @@ CustomHeader.args = {
       >
         <strong>Custom header</strong>
         <Button ghost noSpace>
-          Close
+          x
         </Button>
       </div>
     )

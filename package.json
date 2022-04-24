@@ -14,7 +14,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook --docs"
+    "build-storybook": "build-storybook --docs",
+    "chromatic": "npx chromatic --project-token=c6851986feaa"
   },
   "keywords": [],
   "author": "",
