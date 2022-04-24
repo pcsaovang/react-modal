@@ -4,6 +4,12 @@
   "description": "React modal",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "repository": {
+    "url": "https://github.com/pcsaovang/react-modal"
+  },
+  "bugs": {
+    "url": "https://github.com/pcsaovang/react-modal/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
