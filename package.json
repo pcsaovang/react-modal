@@ -1,21 +1,30 @@
 {
-  "name": "modal",
+  "name": "react-modal",
   "version": "1.0.0",
   "description": "React modal",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "author": "Tran Phong",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "modal"
+  ],
+  "files": [
+    "dist"
+  ],
   "repository": {
+    "type": "git",
     "url": "https://github.com/pcsaovang/react-modal"
   },
   "bugs": {
     "url": "https://github.com/pcsaovang/react-modal/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook --docs",
-    "chromatic": "npx chromatic --project-token=c6851986feaa"
+    "chromatic": "npx chromatic"
   },
   "keywords": [],
   "author": "",
