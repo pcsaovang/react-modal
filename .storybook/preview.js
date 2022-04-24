@@ -1,6 +1,7 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 export const parameters = {
+  layout: 'centered',
   viewport: {
     viewports: INITIAL_VIEWPORTS
   },
