@@ -1,9 +1,10 @@
 {
-  "name": "react-modal",
-  "version": "1.0.0",
+  "name": "sm-modal",
+  "version": "1.0.1",
   "description": "React modal",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
   "author": "Tran Phong",
   "license": "MIT",
   "keywords": [
@@ -26,9 +27,6 @@
     "build-storybook": "build-storybook --docs",
     "chromatic": "npx chromatic"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-react": "^7.16.7",
