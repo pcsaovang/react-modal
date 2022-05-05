@@ -1,13 +1,14 @@
-// import { babel } from '@rollup/plugin-babel'
-// import external from 'rollup-plugin-peer-deps-external'
+import { babel } from '@rollup/plugin-babel'
+import external from 'rollup-plugin-peer-deps-external'
 import resolve from '@rollup/plugin-node-resolve'
-import scss from 'rollup-plugin-scss'
+// import scss from 'rollup-plugin-scss'
 import typescript from '@rollup/plugin-typescript'
 import { terser } from 'rollup-plugin-terser'
 import dts from 'rollup-plugin-dts'
 import commonjs from '@rollup/plugin-commonjs'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import svg from 'rollup-plugin-svg'
+import postcss from 'rollup-plugin-postcss'
 
 const packageJson = require('./package.json')
 
@@ -22,14 +23,23 @@ export default [
       {
         file: packageJson.module,
         format: 'es',
-        exports: 'named',
+        exports: 'named'
       }
     ],
     plugins: [
       peerDepsExternal(),
-      scss({ output: false, failOnError: true, outputStyle: 'compressed' }),
-      // babel({ exclude: /node_modules/, presets: ['@babel/preset-react'] }),
-      // external(),
+      postcss({
+        plugins: [],
+        minimize: true
+      }),
+      // scss({
+      //   output: './dist/css/style.css',
+      //   failOnError: true,
+      //   outputStyle: 'compressed',
+      //   runtime: require('sass')
+      // }),
+      babel({ exclude: /node_modules/, presets: ['@babel/preset-react'] }),
+      external(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
