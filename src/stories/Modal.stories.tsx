@@ -36,10 +36,7 @@ const Template: Story<ModalProps> = (args) => {
         Open modal
       </Button>
       <Modal {...args} onClose={() => updateArgs({ ...args, show: false })}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima itaque
-        doloribus nesciunt quam pariatur adipisci nam debitis ipsam accusamus,
-        officia iste expedita at maiores deleniti minus hic laborum sint.
-        Reprehenderit!
+        Modal content with component
       </Modal>
     </div>
   )

@@ -90,10 +90,7 @@ CustomFooter.args = {
 const ModalContent = () => {
   return (
     <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima itaque
-      doloribus nesciunt quam pariatur adipisci nam debitis ipsam accusamus,
-      officia iste expedita at maiores deleniti minus hic laborum sint.
-      Reprehenderit!
+      Modal content with hook
     </div>
   )
 }

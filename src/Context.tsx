@@ -4,7 +4,8 @@ import React, {
   useContext,
   useState,
   ReactElement,
-  FC
+  FC,
+  PropsWithChildren
 } from 'react'
 import { Modal } from './Modal'
 import { ModalProviderProps, ModalOptions } from './types'
@@ -25,9 +26,9 @@ const ModalContext = createContext<ModalContext>({
   hideModal: () => {}
 })
 
-export const ModalProvider: FC<ModalProviderProps> = ({
-  children,
-  configs
+export const ModalProvider: FC<PropsWithChildren<ModalProviderProps>> = ({
+  configs,
+  children
 }) => {
   const [show, setShow] = useState(false)
   const [content, setContent] = useState<ReactElement>()
