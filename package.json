@@ -1,6 +1,6 @@
 {
   "name": "sm-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React modal",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
