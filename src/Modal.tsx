@@ -1,4 +1,11 @@
-import React, { useEffect, useRef, useMemo, FC, ReactElement } from 'react'
+import React, {
+  useEffect,
+  useRef,
+  useMemo,
+  FC,
+  ReactElement,
+  PropsWithChildren
+} from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { Button } from './Button'
 import styles from './Modal.module.scss'
@@ -24,7 +31,7 @@ export type ModalProps = {
 /**
  * Modal base component.
  */
-export const Modal: FC<ModalProps> = ({
+export const Modal: FC<PropsWithChildren<ModalProps>> = ({
   children,
   show,
   title = 'Modal',

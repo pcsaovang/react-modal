@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useRef } from 'react'
+import { FC, useCallback, useEffect, useRef, PropsWithChildren } from 'react'
 import ReactDOM from 'react-dom'
 
 export const usePortal = () => {
@@ -28,7 +28,7 @@ export const usePortal = () => {
     }
   }, [])
 
-  const Portal: FC = useCallback(({ children }) => {
+  const Portal: FC<PropsWithChildren<{}>> = useCallback(({ children }) => {
     if (!containerRef.current) {
       return null
     }
