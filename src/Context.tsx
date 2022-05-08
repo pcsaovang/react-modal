@@ -12,7 +12,7 @@ import { ModalProviderProps, ModalOptions } from './types'
 /**
  * Modal Content Context
  */
-export type ModalContext = {
+type ModalContext = {
   showModal: (content: ReactElement, options?: ModalOptions) => void
   hideModal: () => void
 }
@@ -20,7 +20,7 @@ export type ModalContext = {
 /**
  * Modal Context
  */
-export const ModalContext = createContext<ModalContext>({
+const ModalContext = createContext<ModalContext>({
   showModal: () => {},
   hideModal: () => {}
 })

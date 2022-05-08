@@ -5,7 +5,7 @@ import styles from './Modal.module.scss'
 import { usePortal } from './usePortal'
 import closeIcon from './assets/svg/close.svg'
 
-export type ModalProps = {
+type ModalProps = {
   show: boolean
   title?: string | ReactElement
   customHeader?: string | ReactElement
