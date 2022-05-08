@@ -7,7 +7,7 @@
 
 This library does not provide any UI, but instead offers a convenient way to render modal components defined elsewhere.
 
-[**Demo**](https://62652043f75a8f004a790633-fjmmcuobsj.chromatic.com/?path=/docs/introduction--page)
+[**Demo**](https://62652043f75a8f004a790633-vcuzneyiek.chromatic.com/)
 
 ## Table of Contents
 
